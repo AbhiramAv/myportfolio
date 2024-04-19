@@ -1,9 +1,12 @@
 {
   "name": "2d-portfolio-kaboom",
+  "homepage": "https://abhiramav.github.io/2d-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -13,6 +16,7 @@
     "vite": "^5.1.0"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "kaboom": "^3000.1.17"
   }
 }
